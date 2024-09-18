@@ -1,0 +1,28 @@
+@startuml
+interface Promotion {
+    +getDiscountAmount()
+}
+
+class Product {
+    -name
+    -price
+    -weight
+}
+
+class Cart {
+    -Product[] products
+    +calculateDeliveryCharge()
+}
+
+Product <|-- Grocery
+Product <|-- Beauty
+Product <|-- LargeAppliance
+
+Promotion <|.. Product
+
+class Grocery
+class Beauty
+class LargeAppliance
+
+Cart --> Product
+@enduml
