@@ -1,4 +1,4 @@
-public class interfaceMain {
+public class InterfaceMain {
     public static void main(String[] args) {
         Product beauty = new Beauty("beauty", 30000, 2);
         Product grocery = new Grocery("grocery", 20000, 3);
