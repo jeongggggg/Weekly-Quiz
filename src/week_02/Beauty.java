@@ -1,5 +1,7 @@
-public class LargeAppliance extends Product{
-    LargeAppliance(String name, int price, int weight){
+package week_02;
+
+public class Beauty extends Product{
+    Beauty(String name, int price, int weight){
         super(name, price, weight);
     }
 

@@ -1,3 +1,5 @@
+package week_02;
+
 public class Product implements Promotion {
     String name;
     int price;

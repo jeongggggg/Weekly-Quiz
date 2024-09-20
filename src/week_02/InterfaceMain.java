@@ -1,3 +1,5 @@
+package week_02;
+
 public class InterfaceMain {
     public static void main(String[] args) {
         Product beauty = new Beauty("beauty", 30000, 2);
