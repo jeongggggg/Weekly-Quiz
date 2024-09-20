@@ -1,0 +1,26 @@
+@startuml
+
+class Contact {
+  - name: String
+  - phoneNumber: String
+}
+
+class BusinessContact {
+  - company: String
+}
+
+class PersonalContact {
+  - relationship: String
+}
+
+class AddressBook {
+  - contacts: List<Contact>
+  + displayContacts(): void
+  + searchContact(name: String): Contact
+}
+
+Contact <|-- BusinessContact
+Contact <|-- PersonalContact
+AddressBook --> Contact
+
+@enduml
